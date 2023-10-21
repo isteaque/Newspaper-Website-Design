@@ -1,0 +1,726 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{font-family: 'Noto Serif Georgian', serif;color: #626262; margin:0;background: #E0E0E0;padding:0; outline:0;}
+.template{width:1000px; margin:0 auto;}
+.clear{overflow:hidden;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+.topbar{
+	background:#2D2928;
+	height:60px;
+}
+.topbar_left {
+    float: left;
+    margin-top: 6px;
+}
+.topbar_left ul {
+    padding-left: 0;
+}
+.topbar_left ul li {
+    list-style: none;
+    float: left;
+    padding: 0px 10px 0px 10px;
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+}
+.topbar_left ul li:last-child{border-right:0;}
+.topbar_left ul li:first-child{border-left:0;}
+.topbar_left ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.topbar_right {
+    float: right;
+}
+.social_icon{}
+.social_icon i {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0px 0px 15px;
+}
+.social_icon a {
+    color: #fff;
+}
+.head_section {
+    
+}
+.magazin_name{}
+.magazin_name h1 {
+    margin: 0;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+.magazin_name p {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0;
+}
+.magazin_name{}
+.menu_section{}
+.menu {
+    overflow: hidden;
+    border-bottom: 3px double;
+    border-top: 3px double;
+    margin: 0px 20px 0px 20px;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: block; */
+}
+.menu ul li {
+    float: left;
+    padding: 5px 40px 5px 0px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.latest_news {
+    margin: 40px 20px 40px 20px;
+}
+.latest_news_left {
+    float: left;
+    width: 500px;
+}
+.latest_news_left img {
+    width: 500px;
+}
+.latest_news_left h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #626262;
+    padding: 10px 0px;
+}
+.latest_news_left p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 0;
+}
+.latest_news_right {
+    float: right;
+    width: 430px;
+}
+.latest_news_detail {
+    margin-bottom: 20px;
+}
+.latest_news_detail h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.latest_news_detail p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Noto Serif Georgian', serif;
+    text-align: justify;
+}
+.latest_news_detail img {
+    float: left;
+    border: 1px solid;
+    padding: 4px;
+    margin-right: 15px;
+}
+.latest_news_detail p}
+.news_content{}
+.news_section {
+    margin: 0px 20px;
+    padding: 20px 0px;
+    border-top: 3px double;
+    border-bottom: 3px double;
+}
+.news_left{
+	float:left;
+	width: 600px;
+}
+.recent_news {
+    border-bottom: 4px double;
+    padding-bottom: 20px;
+}
+.recent_news_left {
+    float: left;
+    width: 290px;
+    margin-right: 20px;
+}
+.recent_news_left h3 {
+    color: #A8A8A8;
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #A8A8A8;
+    margin-bottom: 15px;
+}
+.recent_news_left_detail{}
+.recent_news_left_detail img {
+    float: left;
+    border: 1px solid;
+    padding: 3px;
+    margin-right: 10px;
+}
+.recent_news_left_detail h4 {
+    margin: 0;
+    font-size: 13px;
+}
+.recent_news_left_detail p {
+    margin: 0;
+    line-height: 14px;
+    font-size: 12px;
+}
+.recent_news_left_detail a {
+    float: right;
+    text-decoration: none;
+    font-size: 11px;
+    color: #E64234;
+    padding-top: 2px;
+}
+
+/* .recent_news_left_detail_img{}
+.recent_news_left_detail_img img{
+    float: left;
+} */
+
+.recent_news_right {
+    width: 290px;
+}
+.recent_news_right h3{
+    color: #A8A8A8;
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #A8A8A8;
+    margin-bottom: 15px;
+}
+/* .recent_news_right_detail_img{}
+.recent_news_right_detail_img img{
+	float:left;
+} */
+.recent_news_right_detail {}
+.recent_news_right_detail img{
+    float: left;
+    border: 1px solid;
+    padding: 3px;
+    margin-right: 10px;
+}
+.recent_news_right_detail h4{
+    margin: 0;
+    font-size: 13px;
+}
+.recent_news_right_detail p{
+    margin: 0;
+    line-height: 14px;
+    font-size: 12px;
+}
+.recent_news_right_detail a{
+	float: right;
+    text-decoration: none;
+    font-size: 11px;
+    color: #E64234;
+    padding-top: 2px;
+}
+.categories {
+    margin-top: 30px;
+}
+.news_categorie {
+    width: 150px;
+    float: left;
+}
+.news_categorie h3 {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    background: #333333;
+    padding: 10px 5px;
+    margin-left: 1px;
+    text-align: center;
+}
+.news_categorie h3 a{	text-decoration:none;  color: #fff;}
+.news_categorie h3 a:hover{color: #A8A8A8;}
+
+.news_categorie_detail{}
+.news_categorie_detail h4 {
+    margin: 0;
+    color: #9E3126;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 15px 0px 10px 0px;
+}
+
+.news_categorie_detail h4 a:link{color: #2ECAF9;}
+
+.news_categorie_detail img {
+    border: 1px solid;
+    padding: 3px;
+}
+.news_categorie_detail p {
+    font-size: 13px;
+    line-height: 14px;
+}
+.news_categorie_detail a{
+	text-decoration:none;
+	color:#9E3126;
+}
+
+.news_right{
+	width:360px;
+}
+.news_right_option {
+    margin-left: 30px;
+}
+.adertisement {
+    width: 160px;
+    float: left;
+    margin-right: 10px;
+}
+.adertisement h4 {
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+    border-top: 5px solid;
+}
+.adertisement img{}
+.categorical_news_link{
+	width:160px;
+}
+.news_link{}
+.news_link h4{
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+    border-top: 5px solid;	
+}
+.news_link a {
+    display: block;
+    text-decoration: none;
+    color: #E64234;
+    font-size: 14px;
+}
+.news_link a:last-child{margin-bottom:10px;}
+.news_shortcut {
+    margin: 0px 0px 0px 20px;
+    padding: 30px 0px;
+    border-bottom: 3px double;
+}
+.news_shortcut_link {
+    width: 225px;
+    float: left;
+    margin-right: 20px;
+}
+.news_shortcut_link h3 {
+    margin: 0;
+    padding: 0px 0px 3px 0px;
+    color: #626262;
+    border-bottom: 1px solid #626262;
+    font-size: 15px;
+}
+.news_shortcut_link a {
+    display: block;
+    text-decoration: none;
+    color: #E64234;
+    font-size: 14px;
+}
+.footer {
+    margin: 0px 20px;
+}
+.copyright {
+    float: left;
+    color: #626262;
+}
+.copyright p{}
+.address {
+    float: right;
+    color: #626262;
+}
+.address p{}
+
+
+
+
+@media only screen and (max-width:768px){
+.template{width:758px; margin:0 auto;}
+.social_icon {
+    padding-right: 10px;
+}
+.magazin_name h1 {
+
+    font-size: 70px;
+
+}
+.magazin_name p {
+    margin-bottom: 10px;
+}
+.menu ul li {
+
+    padding: 5px 20px 5px 0px;
+}
+
+.latest_news_left {
+    width: 380px;
+}
+.latest_news_left img {width: 380px;}
+
+.latest_news_right {
+    width: 320px;
+    float: left;
+    margin-left: 18px;
+}
+.latest_news_detail img {
+    width: 75px;
+    margin-right: 10px;
+}
+.latest_news_detail h3 {
+    font-size: 15px;
+}
+.latest_news_detail p {
+    font-size: 14px;
+}
+.latest_news_detail {
+    margin-bottom: 14px;
+}
+.latest_news_left h3 {
+    font-size: 18px;
+    padding: 3px 0px;
+}
+.latest_news_left p {
+    font-size: 16px;
+}
+.news_left {
+    /* float: left; */
+    width: 758px;
+}
+.recent_news_left {
+
+    width: 348px;
+
+}
+.recent_news_left_detail p {
+    font-size: 14px;
+}
+.recent_news_right {
+    width: 348px;
+}
+.recent_news_right_detail p {
+
+    font-size: 14px;
+}
+.news_categorie {
+    width: 180px;
+
+}
+.news_categorie_detail {
+    margin-left: 10px;
+}
+.news_categorie_detail p {
+    font-size: 14px;
+
+}
+.news_right {
+    width: 758px;
+}
+.news_right_option {
+    margin-left: 0px;
+}
+.adertisement {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+.adertisement img {
+    width: 200px;
+	height:200px;
+}
+.categorical_news_link {
+    width: 510px;
+}
+.news_link {
+    float: left;
+    margin-left: 15px;
+}
+.news_link a {
+
+    line-height: 23px;
+}
+.news_shortcut_link {
+    width: 159px;
+
+}
+.news_shortcut {
+    margin: 0px 20px 0px 20px;
+
+}
+
+
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
